@@ -10,12 +10,9 @@ def draw_cloud():
     arcade.draw_circle_filled(90, 550, 50, arcade.color.WHITE)
 
 def draw_rolling_hills():
-    arcade.draw_circle_filled(250, 50, 400, arcade.color.DARK_GREEN)
-    arcade.draw_circle_filled()
-    arcade.draw_circle_filled()
-
-def draw_tree():
-
+    arcade.draw_circle_filled(350, 250, 100, arcade.color.LIGHT_GREEN)
+    arcade.draw_circle_filled(100, -100, 450, arcade.color.GREEN)
+    arcade.draw_circle_filled(550, -100, 400, arcade.color.DARK_GREEN)
 
 def main():
     arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, "Drawing with Functions")
@@ -25,6 +22,7 @@ def main():
    # call your draw functions
 
     draw_cloud()
+    draw_rolling_hills()
     # Finish and run
     arcade.finish_render()
     arcade.run()
