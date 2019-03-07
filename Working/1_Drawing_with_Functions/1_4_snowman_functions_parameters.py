@@ -33,7 +33,8 @@ def main():
     draw_grass()
     draw_snow_person(50, 50)
     # add another snowman
-
+    draw_grass()
+    draw_snow_person(0, 0)
     # Finish and run
     arcade.finish_render()
     arcade.run()
